@@ -40,7 +40,6 @@ function mbtiReckoning() {
 			// 10번 질문
 			questions.push(document.querySelector('input[type=radio][name=onePage_ten_question]:checked').value);
 			
-			console.log(questions);
 
 			this.calculator(questions, 'N');		// 질문값 리스트, (N, Y)
 			
@@ -80,7 +79,6 @@ function mbtiReckoning() {
 			// 10번 질문
 			questions.push(document.querySelector('input[type=radio][name=twoPage_ten_question]:checked').value);
 			
-			console.log(questions);
 
 			this.calculator(questions, 'N');		// 질문값 리스트, (N, Y)
 			
@@ -120,7 +118,6 @@ function mbtiReckoning() {
 			// 10번 질문
 			questions.push(document.querySelector('input[type=radio][name=threePage_ten_question]:checked').value);
 			
-			console.log(questions);
 
 			this.calculator(questions, 'N');		// 질문값 리스트, (N, Y)
 			
@@ -160,7 +157,6 @@ function mbtiReckoning() {
 			// 10번 질문
 			questions.push(document.querySelector('input[type=radio][name=fourPage_ten_question]:checked').value);
 			
-			console.log(questions);
 
 			this.calculator(questions, 'N');		// 질문값 리스트, (N, Y)
 			
@@ -200,7 +196,6 @@ function mbtiReckoning() {
 			// 10번 질문
 			questions.push(document.querySelector('input[type=radio][name=fivePage_ten_question]:checked').value);
 			
-			console.log(questions);
 
 			this.calculator(questions, 'N');		// 질문값 리스트, (N, Y)
 			
@@ -239,7 +234,6 @@ function mbtiReckoning() {
 			// 10번 질문
 			questions.push(document.querySelector('input[type=radio][name=sixPage_ten_question]:checked').value);
 			
-			console.log(questions);
 
 			this.calculator(questions, 'Y');		// 질문값 리스트, (N, Y)
 			
@@ -391,15 +385,6 @@ function mbtiReckoning() {
 		sessionStorage.setItem('J_check', J_check);
 		sessionStorage.setItem('P_check', P_check);	
 			
-		console.log("I = "+I_check);
-		console.log("E = "+E_check);
-		console.log("S = "+S_check);
-		console.log("N = "+N_check);
-		console.log("T = "+T_check);
-		console.log("F = "+F_check);
-		console.log("J = "+J_check);
-		console.log("P = "+P_check);
-		console.log("마지막페이지확인 = "+lastPageCheck);
 		
 		// 마지막페이지인지 확인 후 mbti결과 화면 노출
 		if(lastPageCheck === "Y") {
@@ -432,7 +417,6 @@ function mbtiReckoning() {
 				result = result+"P";
 			}	
 					
-			console.log("mbti ==  " + result);
 		}
 	
 	}	
