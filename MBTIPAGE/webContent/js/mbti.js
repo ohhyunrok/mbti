@@ -245,7 +245,7 @@ function mbtiReckoning() {
 			
 			document.getElementById("mainImage").style.display = "none";	// 메인 이미지 비노출
 			document.getElementById("questionList").style.display = "none"; // 질문 비노출
-			
+			document.getElementById("myBarDiv").style.display = "none"; // 게이지바 비노출
 			
 			var mbtiPng = "";				// mbti에 맞게 이미지 변경
 			var mbtiNickName = "";			// mbti에 맞게 별칭 변경
@@ -444,7 +444,8 @@ function mbtiReckoning() {
 		sessionStorage.clear();												// mbti 변수 초기화(sessionStorage)
 		
 		document.getElementById("mainImage").style.display = "";			// 메인 이미지 노출
-		document.getElementById("questionList").style.display = ""; 		// 질문 노출				
+		document.getElementById("questionList").style.display = ""; 		// 질문 노출			
+		document.getElementById("myBarDiv").style.display = ""; 			// 게이지바 노출	
 		document.getElementById("mbtiImage").src = "";						// 결과 이미지 초기화
 		document.getElementById("userMbti").innerHTML = "";					// 결과 제목 초기화 변경
 		document.getElementById("userMbtiExplanation").innerHTML = "";		// 결과 내용 초기화 변경
